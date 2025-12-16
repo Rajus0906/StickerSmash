@@ -11,7 +11,7 @@ export default function IconButton({ icon, label, onPress }: Props) {
     return (
         <Pressable style={styles.iconButton} onPress={onPress}>
             <MaterialIcons name={icon} size={24} color='#fff'/>
-            <Text></Text>
+            <Text style={styles.iconButtonLabel}>{label}</Text>
         </Pressable>
     );
 }
